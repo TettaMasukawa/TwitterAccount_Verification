@@ -1,5 +1,5 @@
 /.venv
 /src/__pycache__
 /src/nohup.out
-/test.py
+/src/name2id.py
 /templates
