@@ -23,7 +23,7 @@ def get_id(BT, username):
 
 def follow_check(BT, id):
     party_list = glob(
-        "/home/tmasukawa/OpinionAnalysis/mp_account_list/*.csv"
+        "dm_account_list_202208/*.csv"
     )
 
     url = "https://api.twitter.com/2/users/{}/following".format(id)
