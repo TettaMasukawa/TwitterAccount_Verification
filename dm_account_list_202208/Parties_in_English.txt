@@ -1,0 +1,11 @@
+CDP => 立憲民主党
+DPP => 国民民主党
+Independents => 無所属
+Ishin => 日本維新の会
+JCP => 日本共産党
+LDP => 自民党
+NHK => NHK党
+NKP => 公明党
+Reiwa => れいわ新選組
+SDP => 社会民主党
+DIY => 参政党
