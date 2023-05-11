@@ -56,6 +56,8 @@ def redirect_func():
             return json.dumps({"valid": "あなたのアカウントは有効です。"}, ensure_ascii=False)
         else:
             return json.dumps({"valid": "あなたのアカウントは有効ではありません。"}, ensure_ascii=False)
+    else:
+        return json.dumps({"valid": "あなたのアカウントは有効ではありません。"}, ensure_ascii=False)
 
 
 if __name__ == "__main__":
