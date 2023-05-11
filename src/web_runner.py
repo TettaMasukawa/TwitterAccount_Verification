@@ -17,7 +17,7 @@ def redirect_debug():
 @app.route("/")
 def redirect_func():
     username = request.args.get("username").strip("@")
-    interest = request.args.get("interest")
+    interest = '0'
     string = request.args.get("string")
     current_date = request.args.get("currentday").replace("/", "-")
     current_time = request.args.get("currenttime")
@@ -33,8 +33,8 @@ def redirect_func():
     judged = pd.read_csv("../judged_account.csv", encoding="utf-8")
     account = pd.DataFrame({"account": username}, index=[1])
 
-    if username in judged["account"].values:
-        return json.dumps({"valid": "あなたのアカウントは有効ではありません。"}, ensure_ascii=False)
+    # if username in judged["account"].values:
+    #     return json.dumps({"valid": "あなたのアカウントは有効ではありません。"}, ensure_ascii=False)
 
     if interest == "1":
         if follow_check(BT, id) and active_check(BT, id, string, pre_datetime):
