@@ -26,7 +26,7 @@ def redirect_func():
 
     pre_datetime = datetime.strptime(date_n_time, "%Y-%m-%dT%H:%M:%S")
 
-    BT = "AAAAAAAAAAAAAAAAAAAAAC%2FlQgEAAAAAi9yH0D1YnXy%2F4tKDFNd4Jw%2B9GyQ%3DukHqkVzZWJQX48nwMVys5VglneLIRW3CG566Z0ZY8SUCBkGPsa"
+    BT = ""
 
     id = get_id(BT, username)
 
@@ -61,4 +61,4 @@ def redirect_func():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='160.16.83.206', port=5000) # hostにはIP Address
+    app.run(debug=True, host='', port=5000) # hostにはIP Address
