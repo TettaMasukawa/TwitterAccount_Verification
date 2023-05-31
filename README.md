@@ -1,20 +1,30 @@
 # TwitterAccount_Verification
-Twitterアカウントがアクティブかどうかを独自の基準でチェックするシステム
+This is a system that checks whether a Twitter account is active or not based on our own criteria.  
 
 ## Overview
-**src** : システムで使用するpythonファイルがまとめられている。  
-- twitter_api_connect.py : TwitterAPIへの接続  
-- valid_check : アカウントチェック  
-- web_runner.py : webシステム起動
+<pre>
+.  
+├── src  
+│   ├── twitter_api_connect.py  
+│   ├── valid_check.py  
+│   └── web_runner.py  
+├── requirements.txt  
+└── judged_account.csv 
+</pre>
 
-**dm_account_list_202208** : アカウントチェックで使用する国会議員リスト(随時更新予定)  
+**src** : Here is a collection of python files used by the system.  
+- twitter_api_connect.py : Connect to Twitter API  
+- valid_check : Account Validation  
+- web_runner.py : Run web system
 
-**judged_account.csv** : すでにチェックをクリアしたアカウントのリスト  
+**dm_account_list_202208** : List of members of parliament used for account check (scheduled to be updated from time to time)  
+
+**judged_account.csv** : List of accounts that have already cleared the check  
 
 ## How to Run
-必要なライブラリはrequirements.txtに記載。  
+Required libraries are listed in 'requirements.txt'.  
 
-バックグラウンドで実行することでwebサーバが立ち上がる。(下記参照)  
+You can start a web server by running it in the background.  
 > nohup python3 web_runner.py &  
 
-この場合はnohup.outに実行中のログが追加されていく。  
+In this case, running logs are added to 'nohup.out'.  
