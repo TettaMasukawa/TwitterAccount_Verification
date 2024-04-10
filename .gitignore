@@ -1,5 +1,5 @@
 src/__pycache__
 src/nohup.out
 templates
-src/name2id.py
+src/debug.py
 .*
