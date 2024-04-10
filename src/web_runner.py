@@ -17,7 +17,7 @@ def redirect_debug():
 @app.route("/")
 def redirect_func():
     username = request.args.get("username").strip("@")
-    interest = '0'
+    interest = "0"  # 0 or None: Only active check, 1: Active check & Follow check, 999: for debug (only identification by specified post check)
     string = request.args.get("string")
     current_date = request.args.get("currentday").replace("/", "-")
     current_time = request.args.get("currenttime")
@@ -26,7 +26,7 @@ def redirect_func():
 
     pre_datetime = datetime.strptime(date_n_time, "%Y-%m-%dT%H:%M:%S")
 
-    BT = ""
+    BT = ""  # Fill in BT
 
     id = get_id(BT, username)
 
