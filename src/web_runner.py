@@ -61,4 +61,4 @@ def redirect_func():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='', port=5000) # hostにはIP Address
+    app.run(debug=True, host="", port=5000) # hostにはIP Address
